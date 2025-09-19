@@ -4,10 +4,10 @@
 #include <EthernetUdp.h>
 
 // --- Define W5500 SPI Pins ---
-#define ETH_CLK_PIN   7  // SCK (HSPI)
-#define ETH_MISO_PIN  41  // MISO (HSPI)
-#define ETH_MOSI_PIN  13  // MOSI (HSPI)
-#define ETH_CS_PIN    6   // Your chosen Chip Select pin
+#define ETH_CLK_PIN   12  // SCK (HSPI)
+#define ETH_MISO_PIN  13  // MISO (HSPI)
+#define ETH_MOSI_PIN  11  // MOSI (HSPI)
+#define ETH_CS_PIN    9   // Your chosen Chip Select pin
 #define ETH_PHY_ADDR  0
 
 // --- Network Configuration ---
@@ -22,6 +22,7 @@ const int receiverPort = 5006;       // Port your computer will listen on for da
 EthernetUDP udp;
 
 IPAddress clientIP;
+uint16_t clientPort;
 int client;
 
 void setup() {

@@ -7,7 +7,7 @@ import numpy as np
 # Configuration
 ESP_IP = "192.168.2.255"  # <-- CHANGE this to your ESP's IP
 ESP_PORT = 5000           # <-- CHANGE if ESP listens elsewhere
-BUFFER_SIZE = 100         # 100 bytes
+BUFFER_SIZE = 800         # 100 bytes
 TEST_DURATION = 10        # seconds
 PACKETS_PER_SECOND = 500 # packets per second to send
 
